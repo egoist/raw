@@ -1,0 +1,4 @@
+sitename: 'Raw'
+description: 'raw is a javascript-driven blog engine'
+
+theme: 'index'

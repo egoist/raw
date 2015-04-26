@@ -1,0 +1,24 @@
+{
+  "name": "raw",
+  "version": "1.0.0",
+  "description": "raw is a javascript-driven blog engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malachai0/raw.git"
+  },
+  "author": "touka <i@touka.me> (http://touka.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malachai0/raw/issues"
+  },
+  "homepage": "https://github.com/malachai0/raw",
+  "dependencies": {
+    "marked": "^0.3.3",
+    "mkdirp": "^0.5.0",
+    "swig": "^1.4.2"
+  }
+}

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  line-height: 1.4;
+  background-color: #f0f0f0;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vmin;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  box-shadow: 0 0 1px #ccc;
+}
+
+.logo {
+  margin: 0;
+}
+
+.slogan {
+  font-weight: 400;
+  color: #999;
+  font-size: 16px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.loading {
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  font-size: 20px;
+  color: #999;
+}
+
+.post {
+  padding: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.post-title {
+  font-weight: 400;
+}
+
+.post-header {
+  padding: 20px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+}
+
+.post-content {
+  padding: 20px;
+}
