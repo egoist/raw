@@ -14,6 +14,7 @@ function render(tpl, data) {
 }
 
 Q.reg('home', function(){
+  $('body').addClass('index')
   $('.posts').html(loading)
   $.get(index, function(data) {
     var posts_html = render('posts', {posts: data.posts})

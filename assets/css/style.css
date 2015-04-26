@@ -59,6 +59,10 @@ a {
   font-weight: 400;
 }
 
+.index .post-title {
+  font-size: 16px;
+}
+
 .post-header {
   padding: 20px;
   border-bottom: 1px solid #e2e2e2;
