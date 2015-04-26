@@ -3,16 +3,18 @@
         "sitename": "Raw",
         "description": "raw is a javascript-driven blog engine",
         "theme": "index",
-        "build": 1430032428167
+        "build": 1430033338741
     },
     "posts": [
         {
             "ord": 0,
-            "title": "再见"
+            "title": "再见",
+            "slug": "zai-jian"
         },
         {
             "ord": 1,
-            "title": "用生肉 (raw) 写博客"
+            "title": "用生肉 (raw) 写博客",
+            "slug": "yong-sheng-rou-raw-xie-bo-ke"
         }
     ]
 }

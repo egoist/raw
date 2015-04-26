@@ -22,9 +22,9 @@ Q.reg('home', function(){
   })
 });
 
-Q.reg(/(\d+)/, function(ord) {
+Q.reg('p', function(slug) {
   $('.posts').html(loading)
-  $.get('/api/' + ord + '.json',function (data) {
+  $.get('/api/' + slug + '.json',function (data) {
     var post_html = render('post', data)
     $('.posts').html(post_html)
     $('title').html(data.title)

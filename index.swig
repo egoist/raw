@@ -21,7 +21,7 @@
 {% raw %}
 <script id="posts-template" type="x-tmpl-mustache">
   {{#posts}}
-    <div class="post"><h2 class="post-title"><a href="#!{{ord}}">{{ title }}</a></h2></div>
+    <div class="post"><h2 class="post-title"><a href="#!p/{{slug}}">{{ title }}</a></h2></div>
   {{/posts}}
 </script>
 
