@@ -6,10 +6,10 @@ original drawing from [pixiv/id:35941833](http://www.pixiv.net/member_illust.php
 
 ## Features
 
-- Static posts
-- Ajax loading
-- Command-line ready
-- Compatible with Hexo and Jekyll posts
+Static posts  
+Ajax loading  
+Command-line ready  
+Compatible with Hexo and Jekyll posts
 
 ## Usage
 
