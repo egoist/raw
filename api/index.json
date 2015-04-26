@@ -3,11 +3,15 @@
         "sitename": "Raw",
         "description": "raw is a javascript-driven blog engine",
         "theme": "index",
-        "build": 1430029343818
+        "build": 1430032428167
     },
     "posts": [
         {
             "ord": 0,
+            "title": "再见"
+        },
+        {
+            "ord": 1,
             "title": "用生肉 (raw) 写博客"
         }
     ]
