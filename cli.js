@@ -23,21 +23,25 @@ fs.readdir(dir, function (err, temp_files) {
       files.push(temp_files[i])
     }
   }
+
   files.forEach(function(file, ord) {
     var file_content = fs.readFileSync(dir + file, encoding)
     var meta = yaml.load(file_content.split('---')[1])
     console.log('...' + meta.title)
     var slug = meta.title.slug()
+    var atime = fs.statSync(dir + file).birthtime
     index.posts.push({
       ord: ord,
       title: meta.title,
-      slug: slug
+      slug: slug,
+      atime: atime
     })
     var post = {
       ord: ord,
       title: meta.title,
       slug: slug,
-      content: marked(file_content.split('---')[2])
+      content: marked(file_content.split('---')[2]),
+      atime: atime
     }
     post = JSON.stringify(post, null, 4)
     fs.writeFileSync(api_posts + slug + '.json', post, encoding)
@@ -46,6 +50,9 @@ fs.readdir(dir, function (err, temp_files) {
       var date = new Date
       config.build = date.getTime()
       index.config = config
+      index.posts.sort(function (a, b) {
+        return new Date(b.atime) - new Date(a.atime);
+      })
       var json = JSON.stringify(index, null, 4)
       fs.writeFileSync(api_posts + 'index.json', json, encoding)
       fs.writeFileSync(__dirname + '/index.html', tpl(index), encoding)
