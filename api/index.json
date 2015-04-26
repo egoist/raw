@@ -2,7 +2,8 @@
     "config": {
         "sitename": "Raw",
         "description": "raw is a javascript-driven blog engine",
-        "theme": "index"
+        "theme": "index",
+        "build": 1430029343818
     },
     "posts": [
         {

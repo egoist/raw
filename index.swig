@@ -5,7 +5,7 @@
   <title>{{ config.sitename }}</title>
   <meta name="description" content="{{ config.description }}">
   <link rel="stylesheet" href="assets/css/markdown.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v={{ config.build }}">
 </head>
 <body>
 <div class="wrap">
@@ -36,6 +36,6 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/mustache.min.js"></script>
 <script src="assets/js/q.min.js"></script>
-<script src="assets/js/app.js?v=100"></script>
+<script src="assets/js/app.js?v={{ config.build }}"></script>
 </body>
 </html>

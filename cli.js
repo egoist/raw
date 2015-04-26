@@ -30,6 +30,8 @@ fs.readdir(dir, function (err, files) {
     fs.writeFileSync(api_posts + ord + '.json', post, encoding)
     if(files.length = ord + 1){
       tpl = swig.compileFile(__dirname + '/' + config.theme + '.swig')
+      var date = new Date
+      config.build = date.getTime()
       index.config = config
       var json = JSON.stringify(index, null, 4)
       fs.writeFileSync(api_posts + 'index.json', json, encoding)
