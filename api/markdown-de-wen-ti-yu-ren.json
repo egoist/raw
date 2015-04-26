@@ -2,6 +2,6 @@
     "ord": 6,
     "title": "Markdown 的问题与人",
     "slug": "markdown-de-wen-ti-yu-ren",
-    "content": "<p>王垠在几年前的<a href=\"http://www.yinwang.org/blog-cn/2013/04/14/markdown/\">文章</a>里谈到了一些 Markdown 的问题，除去现在已经被各种 common Markdown 改善的之外似乎还有几个值得一说。</p>\n<h2 id=\"-\">缩进</h2>\n<p>由于在写代码时可以用一对三个反引号包围代码实现高亮，所以我不知道王垠在说什么。其它需要缩进的也只是如列表用到了空格。</p>\n<h2 id=\"-\">特殊字符</h2>\n<p>在输入 <code>x*y</code> 这样的表达式的时候是不会触发任何 Markdown 解析操作的。</p>\n<h2 id=\"-\">表达力有限</h2>\n<p>如果你追根溯源你会知道 Markdown 起初只不过是 John Gruber 设计来满足自己写博客的需要的，表达力有限地其实刚刚好。Inline HTML 就是给王垠的候补。</p>\n<p>而且当你知道 GitHub Flavoured Markdown 支持这样简单的语法来生成 todolist 的时候你无疑是很兴奋的：</p>\n<pre><code>- [ ] todo list item 1\n- [ ] todo list item 2\n- [x] todo list item 3 and done\n</code></pre>",
+    "content": "<p><p>王垠在几年前的<a href=\"http://www.yinwang.org/blog-cn/2013/04/14/markdown/\">文章</a>里谈到了一些 Markdown 的问题，除去现在已经被各种 common Markdown 改善的之外似乎还有几个值得一说。</p></p>\n<p><h2 id=\"-\">缩进</h2></p>\n<p><p>由于在写代码时可以用一对三个反引号包围代码实现高亮，所以我不知道王垠在说什么。其它需要缩进的也只是如列表用到了空格。</p></p>\n<p><h2 id=\"-\">特殊字符</h2></p>\n<p><p>在输入 <code>x*y</code> 这样的表达式的时候是不会触发任何 Markdown 解析操作的。</p></p>\n<p><h2 id=\"-\">表达力有限</h2></p>\n<p><p>如果你追根溯源你会知道 Markdown 起初只不过是 John Gruber 设计来满足自己写博客的需要的，表达力有限地其实刚刚好。Inline HTML 就是给王垠的候补。</p></p>\n<p><p>而且当你知道 GitHub Flavoured Markdown 支持这样简单的语法来生成 todolist 的时候你无疑是很兴奋的：</p></p>\n<pre><code>- [ ] todo list item 1\n- [ ] todo list item 2\n- [x] todo list item 3 and done\n</code></pre>",
     "atime": "2015-03-18T13:02:13.000Z"
 }

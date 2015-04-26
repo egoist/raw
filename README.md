@@ -9,6 +9,7 @@ original drawing from [pixiv/id:35941833](http://www.pixiv.net/member_illust.php
 - Static posts
 - Ajax loading
 - Command-line ready
+- Compatible with Hexo and Jekyll posts
 
 ## License
 

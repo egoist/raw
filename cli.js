@@ -26,8 +26,9 @@ fs.readdir(dir, function (err, temp_files) {
 
   files.forEach(function(file, ord) {
     var file_content = fs.readFileSync(dir + file, encoding)
-    var meta = yaml.load(file_content.split('---')[1])
-    console.log('...' + meta.title)
+    var file_arr = file_content.split('---')
+    var os = (file_arr[0] === '' ? 'jekyll' : 'hexo')
+    var meta = (os === 'jekyll' ? yaml.load(file_arr[1]) : yaml.load(file_arr[0]))
     var slug = meta.title.slug()
     var atime = fs.statSync(dir + file).birthtime
     index.posts.push({
@@ -36,11 +37,12 @@ fs.readdir(dir, function (err, temp_files) {
       slug: slug,
       atime: atime
     })
+    var content = (os === 'jekyll' ? marked(file_arr[2]) : marked(file_arr[1]))
     var post = {
       ord: ord,
       title: meta.title,
       slug: slug,
-      content: marked(file_content.split('---')[2]),
+      content: marked(content),
       atime: atime
     }
     post = JSON.stringify(post, null, 4)
